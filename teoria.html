@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teoria</title>
+
+    <style>
+        body{
+            background-color: rgb(224, 179, 252);
+            color: rgb(62, 7, 114);
+        }
+        h1{
+            color: rgb(195, 0, 255);
+        }
+        p{
+            font-size: medium;
+        }
+    </style>
 </head>
 <body>
     <!--Titulos de nível 1 ate nível 6 -->
@@ -35,5 +48,113 @@
         <img src="https://images.seeklogo.com/logo-png/35/1/corinthians-preto-e-dourado-logo-png_seeklogo-357076.png">
         <img src="./img/moranguinho.png" alt="moranguinho">
         <img src="./img/giphy.gif" alt="gif">
+
+        <p>Paragrafo com caractere &lt;a&gt;</p>
+        <!-- Para inserir emoji use o hexadecimal do site-->
+        <!-- emojiped e o codigo vai depois do &#x-->
+          <p>Inserindo emoji &#x1F60A &#x2764</p>
+
+        <!-- Tags para formatação e enfatização do texto -->
+         <b>Texto em negrito</b><br>
+         <strong>Texto Importante</strong><br>
+         <h1><i>H1 em itálico</i></h1><br>
+         <em>Texto enfatizado</em><br>
+         <mark>Texto marcado</mark><br>
+         <h3>Texto<small>menor</small></h3><br>
+         <del>Texto Excluido</del><br>
+         <ins>Texto inserido</ins><br>
+         <p>4<sub>2</sub></p><br>
+         <p>3<sup>3</sup></p><br>
+         <u>Texto sublinhado</u>
+
+        <!-- Listas -->
+        <!-- Listas ordenadas -->
+
+        <ol>
+         <li>Acordar</li>
+         <li>Tomar banho</li>
+         <li>Colocar Uniforme</li>
+         <li>Tomar café</li>
+         <li>Escovar os dentes</li>
+         <li>Ir para a escola, no horario</li>
+        </ol>
+
+    <!-- Listas Ordenadas com números romanos, em minusculo -->
+      <ol type = "i">
+         <li>Acordar</li>
+         <li>Tomar banho</li>
+         <li>Colocar Uniforme</li>
+         <li>Tomar café</li>
+         <li>Escovar os dentes</li>
+         <li>Ir para a escola, no horario</li>
+        </ol>
+
+    <!-- Lista ordenadas em romanos, em letras maisculas -->
+       <ol type = "I">
+         <li>Acordar</li>
+         <li>Tomar banho</li>
+         <li>Colocar Uniforme</li>
+         <li>Tomar café</li>
+         <li>Escovar os dentes</li>
+         <li>Ir para a escola, no horario</li>
+        </ol>
+
+    <!-- Listas não ordenadas -->
+     <ul>
+        <li>Carvão</li>
+        <li>Carne</li>
+        <li>Bebidas</li>
+        <li>Arroz</li>
+     </ul>
+
+    <!-- Lista dentro de Lista -->
+     <ul>
+        <li>Carne
+        <ul>
+         <li>Picanha</li>
+         <li>Cupim</li>
+         <li>Fraldinha</li>
+        </ul>
+    </li>
+     </ul>
+
+     Trabalhando com tabela
+     <!-- Criando uma nova tabela -->
+      <table border="1">
+        <!-- Criando uma nova linha -->
+         <tr>
+            <!-- th inseri uma celula de cabeçalho -->
+             <th>Nome</th>
+             <th>Idade</th>
+             <th>Profissão</th>
+         </tr>
+         <tr>
+            <!-- Td cria dados nas novas celulas -->
+             <td>Ricardo</td>
+             <td>36</td>
+             <td>Programador</td>
+         </tr>
+      </table>
+
+    Tabelas mescladas
+    <table border="1">
+        <thead>
+            <th>Nome</th>
+            <th>Telefone</th>
+        </thead>
+        <tbody>
+            <tr>
+            <td rowspan="2">João Pedro</td>
+            <td>2323232323</td>
+            </tr>
+            <tr>
+            <td>Thiciane</td>
+            <td>2525252525</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="background-color: rgb(179, 91, 196); font-size: medium; color:aliceblue">Css inline</p>
+
 </body>
 </html>
