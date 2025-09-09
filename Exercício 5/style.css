@@ -1,0 +1,40 @@
+.loja{
+    background-color: rgb(164, 240, 255);
+    margin: 30px 30px;
+    padding: 0;    
+    text-align: center;
+}
+
+.login{
+    background-color: rgb(164, 240, 255);
+    margin: 10px 10px;
+    padding: 0; 
+}
+
+.formulario{
+    background-color: rgb(142, 207, 239);
+    width: 400px;
+    margin: 0 auto;
+    /* Alinha o conteudo interno, centraliza */
+    text-align: center;
+}
+
+.input-nome{
+    /* remover as bordas */
+    border: none;
+    /* Aplica curvatura nos cantos das bordas */
+    border-radius: 5px;
+    margin-left: 10px;
+    /* definir opacidade no campo do texto */
+    opacity: 70%;
+}
+.botao{
+    background-color: rgb(11, 100, 148);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    /* Aplicando sombra no texto posição x, y blur */
+    text-shadow: 5px 2px 5px rgba(20, 89, 173, 0.9);
+}
