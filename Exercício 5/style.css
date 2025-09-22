@@ -1,10 +1,13 @@
 .loja{
     background-color: rgb(164, 240, 255);
-    margin: 30px 30px;
+    margin: 0, 0;
     padding: 0;    
     text-align: center;
 }
 
+.cad{
+    text-align: center;
+}
 .login{
     background-color: rgb(164, 240, 255);
     margin: 10px 10px;
@@ -37,4 +40,17 @@
     font-size: larger;
     /* Aplicando sombra no texto posição x, y blur */
     text-shadow: 5px 2px 5px rgba(20, 89, 173, 0.9);
+}
+
+.sexo{
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border: 2px solid rgba(20, 89, 173, 0.9);;
+    border-radius: 50%;
+}
+/* Pseudoclasse, quando foi estado do objeto mudar ele atribui outras propriedades */
+.sexo:checked{
+    background-color: rgba(20, 89, 173, 0.9);;
+    border-color: #16056c;
 }
