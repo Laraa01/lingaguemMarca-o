@@ -1,0 +1,103 @@
+:root{
+    --cor-verde-starbucks: #046d3c;
+    --cor-preto-texto: #222222;
+    --cor-cinza-borda: #e2e2e2;
+    --cor-branco-borda: #fbfbfb;
+    --cor-fundo: #f7f7f7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-preto-texto);
+}
+
+.cabecalho{
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--cor-cinza-borda);
+}
+
+.logos{
+    height: 8vh;
+}
+
+
+.navegacao{
+    display: flex;
+    gap: 19px;
+}
+
+.item{
+    text-decoration: none;
+    color: var(--cor-preto-texto);
+    font-weight: 600;
+    padding: 15px 0;
+    border-bottom: 5px solid transparent;
+}
+
+.item:focus,
+.item:hover{
+    color: var(--cor-verde-starbucks);
+    border-bottom-color: var(--cor-verde-starbucks);
+}
+
+.localizacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.acao{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.encontrar{
+    text-decoration: none;
+    color: var(--cor-preto-texto);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.botao-entrar{
+   background-color: var(--cor-branco-borda);
+    color: var(--cor-preto-texto);
+    border: 14;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Participe{
+   background-color: var(--cor-preto-texto);
+    color: var(--cor-branco-borda);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;  
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 3vh;
+}
