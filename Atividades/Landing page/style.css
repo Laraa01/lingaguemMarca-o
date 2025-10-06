@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(225, 225, 225);
+    color: white;
+}
+
+.cabecalho{
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #aeaeae;
+}
+
+.container{
+    /* Propriedade defini o tamanho, a largura máxima que ele pode atingir */
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 50px;
+}
+
+/* .banner-image{
+    background-image: url(https://www.grupoaste.com.br/img/content/news/02_KPL_Banner_Home.jpg);
+    width: 100%;
+    height: 100vh;
+} */
+
+.navegacao{
+    display: flex;
+    gap: 20px;
+}
+
+.item{
+    /* Remover decoração da tag a */
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    /* Aplicando negrito */
+    font-weight: 600;
+    padding: 8px 0;
+    border-bottom: 3px solid transparent;
+}
+
+.item:focus,
+.item:hover{
+    color: palevioletred;
+    border-bottom-color: palevioletred;
+}

@@ -27,6 +27,14 @@ body{
     height: 8vh;
 }
 
+.container{
+    /* Propriedade defini o tamanho, a largura máxima que ele pode atingir */
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .navegacao{
     display: flex;
@@ -49,15 +57,30 @@ body{
 
 .localizacao{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     font-weight: 600;
 }
 
+.imglogo{
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.texto-local{
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 .acao{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 14px;
 }
 
 .encontrar{
@@ -99,5 +122,83 @@ body{
 }
 
 .logo{
-    height: 3vh;
+    height: 6vh;
 }
+
+.banner-imagem{
+    /* Aplicando imagem como plano de fundo */
+    background-image: url("./img/starbucks.avif");
+    width: 100%;
+        height: 30vh;
+    /* A propriedade background-repeat faz com que o elemento duplique até preencher o espaço
+    background-repeat: no-repeat;
+    A propriedade background-size define o preenchimento do div, se cobrira todo o elemento div
+    background-size: cover; */
+}
+
+.banner-texto{
+    background-color: rgb(212, 233, 226);
+    margin-top: 1rem;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.banner-texto p{
+text-align: center;
+}
+
+.Saiba-mais{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.banner-tres{
+    display: flex;
+}
+
+.tamanho{
+    width: 50%;;
+}
+
+.estilo-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(212, 233, 226);
+}
+
+.card-rodape{
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    padding: 6px;
+}
+
+.rodape-principal{
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape-container{
+    display: flex;
+    gap: 40px;
+
+}
+
+.coluna-rodape{flex: 1;} /* Faz com que os elementos ocupem todo o espaço */
+.coluna-rodape h3 {margin-bottom: 20px;}
+.coluna-rodape ul {list-style: none;}
+.coluna-rodape ul li {margin-bottom: 10px;}
+.coluna-rodape a {text-decoration: none; color: #e2e2e2; transition: color 0.2s ease;}
+.coluna-rodape a:hover {color: rgb(0, 255, 0)}
+.icones-sociais a {margin-right: 15px; font-size: 20px;}
