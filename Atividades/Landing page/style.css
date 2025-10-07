@@ -54,3 +54,54 @@ body{
     color: palevioletred;
     border-bottom-color: palevioletred;
 }
+
+.item1{
+    /* Remover decoração da tag a */
+    text-decoration: none;
+    color: rgb(228, 50, 134);
+    /* Aplicando negrito */
+    font-weight: 600;
+    padding: 8px 0;
+    border-bottom: 3px solid transparent;
+}
+
+.item1:focus,
+.item1:hover{
+    color: rgb(143, 14, 57);
+    border-bottom-color: rgb(143, 14, 57)
+}
+
+.foto1{
+    width: 1600px;
+    height: 500px;
+}
+
+.prod{
+    display: flex;
+    flex-direction: column;
+    width: 12vw;
+    align-items: center;
+    transition: transform 0.2s ease;
+    margin-top: 4rem;
+    margin-left: 8rem;
+}
+
+.prod:hover{ transform: translateY(-5px);
+}
+
+.foto2{
+    height: 200px;
+}
+
+.escrita{
+    color: black;
+}
+
+.coluna{
+    display: flex;
+    /* flex-direction: row; */
+    gap: 5px;
+    overflow-x: scroll;
+}
+
+.coluna::-webkit-scrollbar{visibility: hidden;}
