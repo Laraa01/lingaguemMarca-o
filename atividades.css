@@ -117,7 +117,7 @@
 }
 
 /* Atividade 2 */
-.conto{
+ .conto{
     margin: 0, 0;
     padding: 0;    
     text-align: center;
@@ -140,7 +140,7 @@
     font-family: Arial, Helvetica, sans-serif;
     transition: transform 0.3s ease;
     /* Evita que o card encolha */
-    flex: 0, 0, auto;
+   flex: 0, 0, auto;
     
 }
 
