@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar Eletrônico</title>
+    <!-- Importando Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="./script.js"></script>
+    
+</head>
+<body class="bg-blue-800 text-white flex flex-col items-center justify-center p-4">
+    <header class="mb-8 text-center"><h1 class="text-4xl md:text-5xl font-bold text-blue-400">Placar Eletrônico</h1></header>
+
+    <section class="bg-gray-800 text-white flex rounded-lg shadow-2xl items-center justify-around gap-40 p-4">
+        <div class="text-center flex flex-col items-center gap-2">
+            <p class="text-2xl font-semibold mb-2">Casa</p>
+            <p id="pt1" class="text-6xl font-bold text-yellow-400 mb-4">0</p>
+            <button onclick="ponto1()" class="bg-blue-500 text-white rounded-lg p-3">Gol</button>
+            <button onclick="ponto3()" class="bg-blue-500 text-white rounded-lg p-3">Diminuir</button>
+        </div>
+
+        <div>
+            <div class="text-center flex flex-col items-center gap-2">
+            <p class="text-2xl font-semibold mb-2">Visitante</p>
+            <p id="pt2" class="text-6xl font-bold text-yellow-400 mb-4">0</p>
+            <button onclick="ponto2()" class="bg-blue-500 text-white rounded-lg p-3">Gol</button>
+            <button onclick="ponto4()" class="bg-blue-500 text-white rounded-lg p-3">Diminuir</button>
+      </div>
+<div class="text-center flex justify-center items-center gap-2">
+       <button onclick="zerar()" class="bg-blue-800 text-white rounded-lg p-3 ">Zerar</button></div>
+
+    </section>
+<header class="mb-8 text-center gap-2"><h1 class="text-4xl md:text-5xl font-bold text-blue-400">Placar Eletrônico Basquete</h1></header>
+    <section class="bg-gray-800 text-white flex rounded-lg shadow-2xl items-center justify-around gap-40 p-4">
+        <div class="text-center flex flex-col items-center gap-2">
+            <p class="text-2xl font-semibold mb-2">Casa</p>
+            <p id="pt3" class="text-6xl font-bold text-yellow-400 mb-4">0</p>
+            <div>
+            <button onclick="pontobasquete1(1)" class="bg-blue-500 text-white rounded-lg p-3">+1</button>
+            <button onclick="pontobasquete1(2)" class="bg-blue-500 text-white rounded-lg p-3">+2</button>
+            <button onclick="pontobasquete1(3)" class="bg-blue-500 text-white rounded-lg p-3">+3</button>
+            </div>
+        </div>
+
+        <div>
+            <div class="text-center flex flex-col items-center gap-2">
+            <p class="text-2xl font-semibold mb-2">Visitante</p>
+            <p id="pt4" class="text-6xl font-bold text-yellow-400 mb-4">0</p>
+            <div>
+            <button onclick="pontobasquete2(1)" class="bg-blue-500 text-white rounded-lg p-3">+1</button>
+            <button onclick="pontobasquete2(2)" class="bg-blue-500 text-white rounded-lg p-3">+2</button>
+            <button onclick="pontobasquete2(3)" class="bg-blue-500 text-white rounded-lg p-3">+3</button>
+            </div>
+      </div>
+
+       <div class="text-center flex items-center justify-between gap-2">
+       <button onclick="Zerar()" class="bg-blue-800 text-white rounded-lg p-3 ">Zerar</button></div>
+
+    </section>
+</body>
+</html>
