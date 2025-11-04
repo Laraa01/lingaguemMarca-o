@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./script.js"></script>
+</head>
+<body class="bg-gray-100">
+ <header class="bg-gray-50 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex justify-center items-center">
+            <img src="../../img/Sem-título-2.png" alt="logo" class="h-36">
+            <a href="#" class="text-2xl font-bold text-pink-500">Doçuras da vovó</a>
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <div class="relative">
+                    <!-- Menu -->
+                     <button id="gatilho-dropdown-web" class="flex items-center text-gray-400 hover:text-pink-600">
+                        Minha Conta
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                     </button>
+                     <div id="menu-dropdown-web" class="hidden absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="" class="block px-4 py-2 text-sm text-gray-400 hover:bg-pink-100">Meus Pedidos</a>
+                        <a href="" class="block px-4 py-2 text-sm text-gray-400 hover:bg-pink-100">Configurações</a>
+                        <a href="" class="block px-4 py-2 text-sm text-gray-400 hover:bg-pink-100">Sair</a>
+                     </div>
+                </div>
+                     <a href="" class="text-gray-400 hover:text-pink-600">Principal</a>
+                     <a href="" class="text-gray-400 hover:text-pink-600">Favoritos</a>
+                     <a href="" class="text-gray-400 hover:text-pink-600">Promoções</a>  
+            </div>
+                <button id="btn-hamburguer" class="md:hidden text-gray-600 focus:outline-none">
+                    <!-- Menu hamburguer -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+                </button> 
+        </nav>
+        <!-- Menu Mobile -->
+        <div id="menu-mobile" class="hidden md:hidden bg-white shadow-lg">
+            <div>
+                <button id="gatilho-dropdown-mobile" class="w-full flex items-center justify-between text-gray-400 hover:text-blue-50 text-left px-6 py-3">
+                        Destinos
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="menu-dropdown-mobile" class="hidden pl-8">
+                    <a href="" class="block px-4 py-2 text-sm text-gray-400 hover:bg-pink-50">Meus Pedidos</a>
+                    <a href="" class="block px-4 py-2 text-sm text-gray-400 hover:bg-pink-50">Configurações</a>
+                    <a href="" class="block px-4 py-2 text-sm text-gray-400 hover:bg-pink-50">Sair</a>
+                </div>
+            </div>
+                <a href="" class="text-gray-400 hover:text-pink-600">Principal</a>
+                <a href="" class="text-gray-400 hover:text-pink-600">Favoritos</a>
+                <a href="" class="text-gray-400 hover:text-pink-600">Promoções</a> 
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8">
+        <section class="relative w-full max-w-4xl mx-auto rounded-lg shadow-xl">
+            <div id="carrossel-container" class="overflow-hidden rounded-lg">
+                <div id="carrossel-slides" class="flex transition-transform
+                duration-500 ease-in-out">
+                    <div class="slide-carrossel min-w-full h-80 
+                    items-center justify-center">
+                    <img src="https://png.pngtree.com/background/20230412/original/pngtree-chocolate-melted-snack-background-picture-image_2398710.jpg" alt="" class="">
+                    </div>
+                    <div class="slide-carrossel min-w-full h-80
+                    items-center justify-center">
+                    <img src="https://receitafacil.net/wp-content/uploads/2025/08/pave-de-morango.jpg" alt="" class="">
+                    </div>
+                    <div class="slide-carrossel min-w-full h-80
+                    items-center justify-center">
+                        <img src="https://img.nsctotal.com.br/wp-content/uploads/2025/10/A-receita-se-popularizou-nas-redes-sociais-por-causa-de-seu-preparo-simples-e-facil-Foto-Redes-sociais-Ana-Zambrin-Reproducao-.jpg" alt="" class="">
+                    </div>
+                </div>
+            </div>
+            <button id="btn-anterior" class="absolute top-1/2 left-4
+            bg-white/50 hover:bg-white p-2 rounded-full shadow -translate-y-1/2
+            ">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            <button id="btn-proximo" class="absolute top-1/2 right-4
+            bg-white/50 hover:bg-white p-2 rounded-full shadow -translate-y-1/2
+            ">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+        </section>
+        <section>
+            <a href="#"> <h1 class=" h-10 text-2xl font-bold flex justify-center items-center">Recomendados</h1></a>
+            <p class="text-gray-400 flex justify-center items-center">Aproveite nossos melhores produtos</p>
+            <div class="mt-10 shadow-lg bg-white">
+           <section class="flex">
+            <div class="flex justify-center items-center w-1/2">
+                <h1 class="text-3xl font-semibold text-pink-600">Cupcake</h1>
+                <p >Experimente uma versão deliciosa do cupcake Red Velvet, ideal para festas e ocasiões especiais.
+                    Um cupcake de textura muito leve e macia, levemente amanteigado e com um discreto sabor a chocolate</p>
+            </div>
+                <img src="../../img/958fe191495d035072f23a8b87ac2b9b.jpg" alt="" class="w-1/2">
+           </section>
+           </div>
+
+           <div class="mt-10 shadow-lg bg-white">
+           <section class="flex">
+            <img src="../../img/246f916a613911b479c415b794bf4fc4.jpg" alt="" class="w-1/2">
+            <div class="w-1/2 flex justify-center items-center">
+                <h1 class="text-3xl font-semibold text-pink-600 flex">Mini Churos</h1>
+                <p>Experimente uma versão deliciosa do mini churros recheado com doce de leite, ideal
+                    para qualquer ocasião. Você pode se servir no lanche ou guloseima e alegrar a família.
+                </p>
+            </div>
+           </section>
+           </div>
+        </section>
+    </main>
+</body>
+</html>
+    
+</body>
+</html>
